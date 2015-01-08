@@ -1,2 +1,2 @@
-# portfoio_site
+# portfolio_site
 web design portfolio
