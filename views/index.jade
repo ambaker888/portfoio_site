@@ -2,31 +2,30 @@ extends layout
 
 block content
   .container-fluid
-    p
-      | a pic will be here
-  .container-fluid
+    img(src='', alt='Picture coming soon', style='width:800px;height:890px')
+
+  .container-fluid.background-white
     .container.text-center
       h1
-        | work
-      .col-md-4.img-responsive
-        p
-          | lkdjlsdkfjlksdjf
-      .col-md-4.img-responsive
-        p
-          | lkdjlsdkfjlksdjf
-      .col-md-4.img-responsive
-        p
-          | lkdjlsdkfjlksdjf
+        | Featured Work
+      .col-md-4.col-sm-4.img-responsive
+        img(src='', alt='Picture coming soon')
+
+      .col-md-4.col-sm-4.img-responsive
+        img(src='', alt='Picture coming soon')
+
+      .col-md-4.col-sm-4.img-responsive
+        img(src='', alt='Picture coming soon' )
   .container-fluid
     .container.text-center
       h1
         | about
       p
-        |My name is  Andrea and I do what i love for a living.  I’m a usability specialistand web designer. I enjoy working withothers,creating fully functioning websites, and helping my clients create sites forthe user.  in my freetime you can bet I will be teaching myself more about the interwebs or at a local  meetup..
-  .container-fluid
+        | My name is  Andrea and I do what I love for a living.  I’m a usability specialistand and a web designer. I enjoy working with others,creating fully functioning websites, and helping my clients create sites for the user.  In my free time you can bet I will be teaching myself more about the interwebz or at a local  meetup.
+  .container-fluid.background-white
     .container.text-center
       h1
-        | blog
+        | What I do
 
       .col-md-4
         p
@@ -40,9 +39,9 @@ block content
   .container-fluid
     .container.text-center
       h1
-        | contact
+        | Contact me
       p
-        | 
+        | Drop me a message or follow me on social media.
       form.form.col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
         .form-inputs
           .form-group
@@ -56,3 +55,11 @@ block content
             textarea.form-control(rows='3')
           .form-actions
             button.btn.btn-default(type='submit') SUBMIT
+     .col-md-1.col-md-push-3.img-responsive
+        img(src='', alt='media')
+
+      .col-md-1.col-md-offset-2.img-responsive
+        img(src='', alt='media')
+
+      .col-md-1.col-md-pull-2.img-responsive
+        img(src='', alt='media' )
