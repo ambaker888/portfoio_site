@@ -1,65 +1,114 @@
 extends layout
 
 block content
-  .container-fluid
-    img(src='', alt='Picture coming soon', style='width:800px;height:890px')
+  body(data-spy='scroll', data-target='.navbar-fixed-top')
+    header
+      nav.navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#collapse')
+              span.sr-only toggle navigation
 
-  .container-fluid.background-white
-    .container.text-center
-      h1
-        | Featured Work
-      .col-md-4.col-sm-4.img-responsive
-        img(src='', alt='Picture coming soon')
+              span.icon-bar
 
-      .col-md-4.col-sm-4.img-responsive
-        img(src='', alt='Picture coming soon')
+              span.icon-bar
+             
+              span.icon-bar
+            
+            a.navbar-brand(href='#home')
+              | Wisdom
+              span.subhead Pet meds
 
-      .col-md-4.col-sm-4.img-responsive
-        img(src='', alt='Picture coming soon' )
-  .container-fluid
-    .container.text-center
-      h1
-        | about
-      p
-        | My name is  Andrea and I do what I love for a living.  I’m a usability specialistand and a web designer. I enjoy working with others,creating fully functioning websites, and helping my clients create sites for the user.  In my free time you can bet I will be teaching myself more about the interwebz or at a local  meetup.
-  .container-fluid.background-white
-    .container.text-center
-      h1
-        | What I do
+          #collapse.collapse.navbar-collapse
+            ul.nav.navbar-nav.pull-right
+              li.active
+                a(href='#home') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#work') Work
+              li
+                a(href='#contact') Contact
+      #home.hero-image
+        .item
+          img(src='../images/hero-pic.png', alt='')
+    .main
+      #about.page
+        .content.container
+          h2 Who is Andrea and What can she do
+          .row
+            p.col-md-6
+              | My name is  Andrea and I do what I love for a living.  I’m a usability specialistand and a web designer. I enjoy working with others,creating fully functioning websites, and helping my clients create sites for the user.  In my free time you can bet I will be teaching myself more about the interwebz or at a local  meetup.
+            p.col-md-6
+              | Web design, html5, css3, sass, html emails, WordPress, design implementation in Ruby on Rails, and Express.js.
+      #work.page
+        .content.container
+          .row
+            article.service.col-md-4.col-sm-6.col-xs-12
+              img.icon(src='', alt='')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 malesuada
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
+            article.service.col-md-4.col-sm-6.col-xs-12
+              img.icon(src='', alt='')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 malesuada
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            article.service.col-md-4.col-sm-6.col-xs-12
+              img.icon(src='', alt='')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 malesuada
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            article.service.col-md-4.col-sm-6.col-xs-12
+              img.icon(src='', alt='')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 malesuada
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
+            article.service.col-md-4.col-sm-6.col-xs-12
+              img.icon(src='', alt='')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 malesuada
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
+            | &#x9;
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            article.service.col-md-4.col-sm-6.col-xs-12
+              img.icon(src='', alt='')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 malesuada
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
+      #contact.page
+        .container-fluid
+          h2 Contact
+          .row
+            div.col-md-6
+              p Cincinnati OH 
 
-      .col-md-4
-        p
-          | lkdjlsdkfjlksdjf
-      .col-md-4
-        p
-          | lkdjlsdkfjlksdjf
-      .col-md-4
-        p
-          | lkdjlsdkfjlksdjf
-  .container-fluid
-    .container.text-center
-      h1
-        | Contact me
-      p
-        | Drop me a message or follow me on social media.
-      form.form.col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
-        .form-inputs
-          .form-group
-            label.pull-left(for='Name') Name
-            input#name.form-control(type='email')
-          .form-group
-            label.pull-left(for='email') Email
-            input#email.form-control(type='email')
-          .form-group
-            label.pull-left(for='exampleInputPassword1') Message
-            textarea.form-control(rows='3')
-          .form-actions
-            button.btn.btn-default(type='submit') SUBMIT
-     .col-md-1.col-md-push-3.img-responsive
-        img(src='', alt='media')
-
-      .col-md-1.col-md-offset-2.img-responsive
-        img(src='', alt='media')
-
-      .col-md-1.col-md-pull-2.img-responsive
-        img(src='', alt='media' )
+            div.col-md-6
+              form
+                .form-group
+                  label(for='exampleInputPassword1') Password
+                  |  
+                  input#exampleInputEmail1.form-control(type='email', placeholder='Enter email')
+                |   
+                .form-group
+                  label(for='exampleInputPassword1') Password
+                  |     
+                  input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                .form-group
+                  textarea.form-control(rows='3')
+                |   
+                button.btn.btn-default.btn-block(type='submit') Submit
