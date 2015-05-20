@@ -6,40 +6,36 @@ html
     
     title= title
 
-    link(rel="stylesheet", type="text/css", href="/stylesheets/bootstrap-overrides.css")
+    
+    
     link(rel="stylesheet", type="text/css", href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
+    link(rel="stylesheet", type="text/css", href="/stylesheets/bootstrap-overrides.css")
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')  
     link(rel='stylesheet', type="text/css", href='/stylesheets/style.css')
-
+    
     script(src='//code.jquery.com/jquery-2.1.3.min.js')
     script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
     script(src='/javascripts/application.js')
-
-  nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
-    .container-fluid
-      .navbar-header
-        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        alogo.pull-left(href="/")
-          img.img-responsive(src='/images/brand.png', alt='fs 24/7 ltd')
-      #bs-example-navbar-collapse-1.collapse.navbar-collapse.pull-right
-        ul.nav.navbar-nav
-          li#nav-company
-            a(href='/work') Work
-          li#nav-services
-            a(href='/about') About
-          li#nav-support
-            a(href='/suppo') Services
-          li#nav-technicain
-            a(href='/technicians') Contact
+  
   body
     .container-fluid
       
       block content
     
-    footer.container-fluid
-      .row
-          p 
-            | &copy;2014 Andrea Baker
+    footer
+      .container-fluid
+        .row
+          .col-lg-10.col-lg-offset-1
+            .col-lg-5
+              p
+                &copy;Andrea Baker 2015
+            .col-lg-7
+                ul.list-inline
+                  li
+                    a(href='https://www.linkedin.com/in/andreabakerweb') 
+                      span.fa.fa-behance
+                  li
+                    a(href='https://github.com/ambaker888')
+                      span.fa.fa-github-alt
+
+                    
