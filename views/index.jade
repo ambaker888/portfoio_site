@@ -17,7 +17,6 @@ block content
             
             a.navbar-brand(href='#home')
               | Wisdom
-              span.subhead Pet meds
 
           #collapse.collapse.navbar-collapse
             ul.nav.navbar-nav.pull-right
@@ -29,85 +28,72 @@ block content
                 a(href='#work') Work
               li
                 a(href='#contact') Contact
-      #home.hero-image
-        .item
-          img(src='../images/hero-pic.png', alt='')
+      #home
+        .item.jumbotron
+          p.hero-message
+            | hjkhkjhgjhgjhgjhgjhgfffffggggggggggggggggggggggggggggggggggfffffffffffffffffffffffffffffffffffffff
+
     .main
-      #about.page
+      #about.page.container-fluid
         .content.container
-          h2 Who is Andrea and What can she do
-          .row
-            p.col-md-6
-              | My name is  Andrea and I do what I love for a living.  I’m a usability specialistand and a web designer. I enjoy working with others,creating fully functioning websites, and helping my clients create sites for the user.  In my free time you can bet I will be teaching myself more about the interwebz or at a local  meetup.
-            p.col-md-6
-              | Web design, html5, css3, sass, html emails, WordPress, design implementation in Ruby on Rails, and Express.js.
+          h2 About 
+          .row.text-center
+            .col-sm-10.col-sm-offset-1
+              p.text-center
+                | My name is  Andrea and I do what I love for a living.  I’m a usability specialist and and a web designer. I enjoy working with others,creating fully functioning websites, and helping my clients create sites for the user.  In my free time I enjoy cooking and watching cat videos.
+            .col-sm-10.col-sm-offset-1
+              p.text-center
+                | My experience includes web design, html5, css3, sass, html emails, WordPress, design implementation in Ruby on Rails, and Express.js.
       #work.page
-        .content.container
-          .row
-            article.service.col-md-4.col-sm-6.col-xs-12
-              img.icon(src='', alt='')
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              h3 malesuada
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
-            article.service.col-md-4.col-sm-6.col-xs-12
-              img.icon(src='', alt='')
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              h3 malesuada
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
-            | &#x9;&#x9;&#x9;&#x9;&#x9;
-            article.service.col-md-4.col-sm-6.col-xs-12
-              img.icon(src='', alt='')
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              h3 malesuada
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
-            | &#x9;&#x9;&#x9;&#x9;&#x9;
-            article.service.col-md-4.col-sm-6.col-xs-12
-              img.icon(src='', alt='')
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              h3 malesuada
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
-            article.service.col-md-4.col-sm-6.col-xs-12
-              img.icon(src='', alt='')
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              h3 malesuada
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
-            | &#x9;
-            | &#x9;&#x9;&#x9;&#x9;&#x9;
-            article.service.col-md-4.col-sm-6.col-xs-12
-              img.icon(src='', alt='')
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              h3 malesuada
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non porttitor tortor, ac placerat lorem. Nunc eu pretium mi, id
+        .row
+          article.work.col-md-4.col-sm-4.col-xs-12
+            a(href='#')
+            img(src='', alt='')
+
+              
+          article.work.col-md-4.col-sm-4.col-xs-12
+            a(href='#')
+            img(src='', alt='')
+
+          article.work.col-md-4.col-sm-4col-xs-12
+            a(href='#')
+            img(src='', alt='')
+           
+         .row 
+            article.work.col-md-4.col-sm-4.col-xs-12
+              a(href='#')
+              img(src='', alt='')
+              
+            article.work.col-md-4.col-sm-4.col-xs-12
+              a(href='#')
+              img(src='', alt='')
+            
+            article.work.col-md-4.col-sm-6.col-xs-12
+              a(href='#')
+              img(src='', alt='')
+              
       #contact.page
-        .container-fluid
+        .container
           h2 Contact
           .row
             div.col-md-6
-              p Cincinnati OH 
+              ul
+              li.fa.icon-map-marker Cincinnati, OH 
+              li.fa.fa-envelope ambaker.888@gmail.com 
 
+              
+              
             div.col-md-6
               form
                 .form-group
-                  label(for='exampleInputPassword1') Password
+                  label(for='exampleInputPassword1') 
                   |  
-                  input#exampleInputEmail1.form-control(type='email', placeholder='Enter email')
-                |   
+                  input#exampleInputEmail1.form-control(type='email', placeholder='Name')
+                  |   
                 .form-group
-                  label(for='exampleInputPassword1') Password
+                  label(for='exampleInputPassword1') 
                   |     
-                  input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                  input#exampleInputPassword1.form-control(type='password', placeholder='Enter email')
                 .form-group
                   textarea.form-control(rows='3')
                 |   
