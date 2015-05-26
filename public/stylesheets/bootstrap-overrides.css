@@ -5,4 +5,20 @@
 }
 .container-fluid{
 	width:100%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.form-group{
+	border-radius: none;
+	margin: 2em;
+}
+.jumbotron{
+  background-repeat: no-repeat;
+  background: url('hero-pic.png');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+ 
 }
