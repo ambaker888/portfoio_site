@@ -13,12 +13,11 @@
 	border-radius: none;
 	margin: 2em;
 }
-.jumbotron{
+#home{
   background-repeat: no-repeat;
   background: url('hero-pic.png');
   background-size: cover;
   height: 100%;
   width: 100%;
-  z-index: 1;
  
 }
