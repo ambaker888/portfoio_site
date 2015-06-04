@@ -14,7 +14,7 @@ block content
             span.icon-bar
           
           a.navbar-brand.pull-left(href='#home')
-            | Wisdom
+            img(src='', alt='')
 
         #collapse.collapse.navbar-collapse
           ul.nav.navbar-nav.pull-right
@@ -30,7 +30,7 @@ block content
       .item
         .hero-message
           p
-            | hjkhkjhgjhgjhgjhgjhgfffffggggggggggggggggggggggggggggggggggfffffffffffffffffffffffffffffffffffffff
+            | Your favorite web designer 
 
   .main
     #about.page.container-fluid
@@ -45,55 +45,55 @@ block content
               | My experience includes web design, html5, css3, sass, html emails, WordPress, design implementation in Ruby on Rails, and Express.js.
     #work.page
       .row
-        article.work.col-md-4.col-sm-4.col-xs-12
+        article.work.col-md-3.col-sm-6.col-xs-12
           a(href='#')
-          img(src='', alt='')
+          img.img-responsive(src='/images/Kandidly.png', alt='')
 
             
-        article.work.col-md-4.col-sm-4.col-xs-12
+        article.work.col-md-3.col-sm-6.col-xs-12
           a(href='#')
-          img(src='', alt='')
+          img.img-responsive(src='/images/FS247.png', alt='')
 
-        article.work.col-md-4.col-sm-4col-xs-12
+        article.work.col-md-3.col-sm-6.col-xs-12
           a(href='#')
-          img(src='', alt='')
+          img.img-responsive(src='/images/site-photo.png', alt='')
          
-       .row 
-          article.work.col-md-4.col-sm-4.col-xs-12
+      
+        article.work.col-md-3.col-sm-6.col-xs-12
             a(href='#')
-            img(src='', alt='')
+            img.img-responsive(src='/images/WorkOrder.png', alt='')
             
-          article.work.col-md-4.col-sm-4.col-xs-12
-            a(href='#')
-            img(src='', alt='')
-          
-          article.work.col-md-4.col-sm-6.col-xs-12
-            a(href='#')
-            img(src='', alt='')
+         
             
     #contact.page
-      .container
+      .container-fluid
         h2 Contact
         .row
-          div.col-md-6
-            ul
-            li.fa.icon-map-marker Cincinnati, OH 
-            li.fa.fa-envelope ambaker.888@gmail.com 
+          .contact-icon.col-md-12.text-center
+        
+              a(href='https://github.com/ambaker888')
+              span.fa.fa-map-marker 
+                | Cincinnati, OH 
+              a(href='https://github.com/ambaker888')
+              span.fa.fa-envelope 
+                | ambaker.888@gmail.com 
+
 
             
             
-          div.col-md-6
-            form
-              .form-group
-                label(for='exampleInputPassword1') 
+          .container
+            .col-md-12.text-center
+              form.form-group
+                
+                label(for='exampleInputname') 
                 |  
-                input#exampleInputEmail1.form-control(type='email', placeholder='Name')
+                input#exampleInputname.form-control(type='name', placeholder='Name')
                 |   
-              .form-group
-                label(for='exampleInputPassword1') 
+      
+                label(for='exampleInputemail') 
                 |     
-                input#exampleInputPassword1.form-control(type='password', placeholder='Enter email')
-              .form-group
+                input#exampleInputemail.form-control(type='email', placeholder='Enter email')
+          
                 textarea.form-control(rows='3')
-              |   
-              button.btn.btn-default.btn-block(type='submit') Submit
+                |   
+                  button.btn.btn-default.btn-block(type='submit') Submit
