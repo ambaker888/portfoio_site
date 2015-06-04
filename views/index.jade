@@ -46,22 +46,23 @@ block content
     #work.page
       .row
         article.work.col-md-3.col-sm-6.col-xs-12
-          a(href='#')
-          img.img-responsive(src='/images/Kandidly.png', alt='')
+          a(href='#', data-toggle='modal', data-target='#exampleModal', data-whatever='@fat')
+            img.img-responsive(src='/images/kandidly.png', alt='')
+
 
             
         article.work.col-md-3.col-sm-6.col-xs-12
-          a(href='#')
-          img.img-responsive(src='/images/FS247.png', alt='')
+          a(href='#', data-toggle='modal', data-target='#exampleModal', data-whatever='@fat')
+            img.img-responsive(src='/images/FS247.png', alt='')
 
         article.work.col-md-3.col-sm-6.col-xs-12
-          a(href='#')
-          img.img-responsive(src='/images/site-photo.png', alt='')
+         a(href='#', data-toggle='modal', data-target='#exampleModal', data-whatever='@fat')
+            img.img-responsive(src='/images/site-photo.png', alt='')
          
       
         article.work.col-md-3.col-sm-6.col-xs-12
-            a(href='#')
-            img.img-responsive(src='/images/WorkOrder.png', alt='')
+          a(href='#', data-toggle='modal', data-target='#exampleModal', data-whatever='@fat')
+            img.img-responsive(src='/images/workorder.png', alt='')
             
          
             
@@ -83,17 +84,13 @@ block content
             
           .container
             .col-md-12.text-center
-              form.form-group
-                
-                label(for='exampleInputname') 
-                |  
-                input#exampleInputname.form-control(type='name', placeholder='Name')
-                |   
-      
-                label(for='exampleInputemail') 
-                |     
-                input#exampleInputemail.form-control(type='email', placeholder='Enter email')
-          
-                textarea.form-control(rows='3')
-                |   
-                  button.btn.btn-default.btn-block(type='submit') Submit
+              form
+                .form-group 
+                  input#exampleInputname.form-control(type='name', placeholder='Name')
+                .form-group
+             
+                  input#exampleInputemail.form-control(type='email', placeholder='Email')
+                .form-group
+                  textarea.form-control(rows='3', placeholder='Message')
+                   
+                button.btn.btn-default.btn-block(type='submit') Submit
