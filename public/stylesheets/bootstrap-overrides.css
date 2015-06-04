@@ -8,10 +8,20 @@
 	padding-left: 0px;
 	padding-right: 0px;
 }
-
+form{
+margin-top: 2em;
+}
 .form-group{
-	border-radius: none;
-	margin: 2em;
+	border-radius: 0px;
+	top-margin: 2.2em;
+}
+
+.form-control{
+	border-radius: 0px;
+	background-color: rgba(0, 72, 65, 0.6);
+	border-color: rgba(0, 72, 65, 0.6);
+	padding: 1.7em;
+	
 }
 #home{
   background-repeat: no-repeat;
@@ -19,5 +29,4 @@
   background-size: cover;
   height: 100%;
   width: 100%;
- 
 }
