@@ -46,24 +46,22 @@ block content
     #work.page
       .row
         article.work.col-md-3.col-sm-6.col-xs-12
-          a(href='#', data-toggle='modal', data-target='#exampleModal', data-whatever='@fat')
-            img.img-responsive(src='/images/kandidly.png', alt='')
-
+          
+          img.img-responsive(src='/images/kandidly.png', alt='' data-toggle='modal', data-target='#myModal')
+          include ./kandidly_modal.jade
 
             
         article.work.col-md-3.col-sm-6.col-xs-12
-          a(href='#', data-toggle='modal', data-target='#exampleModal', data-whatever='@fat')
-            img.img-responsive(src='/images/FS247.png', alt='')
+          img.img-responsive(src='/images/FS247.png', alt='' data-toggle='modal', data-target='#myModal')
+          include ./fs247_modal.jade
 
         article.work.col-md-3.col-sm-6.col-xs-12
-         a(href='#', data-toggle='modal', data-target='#exampleModal', data-whatever='@fat')
-            img.img-responsive(src='/images/site-photo.png', alt='')
+          img.img-responsive(src='/images/site-photo.png', alt='' data-toggle='modal', data-target='#myModal')
+          include ./fs247_modal.jade
          
-      
         article.work.col-md-3.col-sm-6.col-xs-12
-          a(href='#', data-toggle='modal', data-target='#exampleModal', data-whatever='@fat')
-            img.img-responsive(src='/images/workorder.png', alt='')
-            
+          img.img-responsive(src='/images/workorder.png',alt='' data-toggle='modal', data-target='#myModal') 
+           include ./fs247_modal.jade 
          
             
     #contact.page
@@ -94,3 +92,4 @@ block content
                   textarea.form-control(rows='3', placeholder='Message')
                    
                 button.btn.btn-default.btn-block(type='submit') Submit
+
