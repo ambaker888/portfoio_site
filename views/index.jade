@@ -35,7 +35,7 @@ block content
   .main
     #about.page.container-fluid
       .content.container
-        h2 About 
+        h2 Who am I and what do I do
         .row
           .col-sm-10.col-sm-offset-1
             p
@@ -44,29 +44,32 @@ block content
             p
               | My experience includes web design, html5, css3, sass, html emails, WordPress, design implementation in Ruby on Rails, and Express.js.
     #work.page
-      .row
-        article.work.col-md-3.col-sm-6.col-xs-12
-          
-          img.img-responsive(src='/images/kandidly.png', alt='' data-toggle='modal', data-target='#myModal')
-          include ./kandidly_modal.jade
+      .container
+        .col-sm-10.col-sm-offset-1.content.container
+            h2 See what I'm working on
+      .container-fluid   
+        .row
+          article.work.col-md-3.col-sm-6.col-xs-12
+            img.img-responsive(src='/images/kandidly.png', alt='' data-toggle='modal', data-target='#myModalkandidly')
+            include ./kandidly_modal.jade
 
-            
-        article.work.col-md-3.col-sm-6.col-xs-12
-          img.img-responsive(src='/images/FS247.png', alt='' data-toggle='modal', data-target='#myModal')
-          include ./fs247_modal.jade
+              
+          article.work.col-md-3.col-sm-6.col-xs-12
+            img.img-responsive(src='/images/FS247.png', alt='' data-toggle='modal', data-target='#myModalfs')
+            include ./fs247_modal.jade
 
-        article.work.col-md-3.col-sm-6.col-xs-12
-          img.img-responsive(src='/images/site-photo.png', alt='' data-toggle='modal', data-target='#myModal')
-          include ./fs247_modal.jade
-         
-        article.work.col-md-3.col-sm-6.col-xs-12
-          img.img-responsive(src='/images/workorder.png',alt='' data-toggle='modal', data-target='#myModal') 
-           include ./fs247_modal.jade 
-         
+          article.work.col-md-3.col-sm-6.col-xs-12
+            img.img-responsive(src='/images/site-photo.png', alt='' data-toggle='modal', data-target='#myModaluntitled')
+            include ./untitled_modal.jade
+           
+          article.work.col-md-3.col-sm-6.col-xs-12
+            img.img-responsive(src='/images/workorder.png',alt='' data-toggle='modal', data-target='#myModalworkorder') 
+            include ./Workorder_modal.jade 
+           
             
     #contact.page
       .container-fluid
-        h2 Contact
+        h2 Let's chat
         .row
           .contact-icon.col-md-12.text-center
         
