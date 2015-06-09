@@ -1,0 +1,98 @@
+extends layout
+
+block content
+  header
+    nav.navbar.navbar-default.navbar-fixed-top
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#collapse')
+            span.sr-only toggle navigation
+
+            span.icon-bar
+
+            span.icon-bar
+           
+            span.icon-bar
+          
+          a.navbar-brand.pull-left(href='#home')
+            img(src='', alt='')
+
+        #collapse.collapse.navbar-collapse
+          ul.nav.navbar-nav.pull-right
+            li.active
+              a(href='#home') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#work') Work
+            li
+              a(href='#contact') Contact
+    #home
+      .item
+        .hero-message
+          p
+            | Your favorite web designer 
+
+  .main
+    #about.page.container-fluid
+      .content.container
+        h2 Who am I and what do I do
+        .row
+          .col-sm-10.col-sm-offset-1
+            p
+              | My name is  Andrea and I do what I love for a living.  I’m a usability specialist and and a web designer. I enjoy working with others,creating fully functioning websites, and helping my clients create sites for the user.  In my free time I enjoy cooking and watching cat videos.
+          .col-sm-10.col-sm-offset-1
+            p
+              | My experience includes web design, html5, css3, sass, html emails, WordPress, design implementation in Ruby on Rails, and Express.js.
+    #work.page
+      .container
+        .col-sm-10.col-sm-offset-1.content.container
+            h2 See what I'm working on
+      .container-fluid   
+        .row
+          article.work.col-md-3.col-sm-6.col-xs-12
+            img.img-responsive(src='/images/kandidly.png', alt='' data-toggle='modal', data-target='#myModalkandidly')
+            include ./kandidly_modal.jade
+
+              
+          article.work.col-md-3.col-sm-6.col-xs-12
+            img.img-responsive(src='/images/FS247.png', alt='' data-toggle='modal', data-target='#myModalfs')
+            include ./fs247_modal.jade
+
+          article.work.col-md-3.col-sm-6.col-xs-12
+            img.img-responsive(src='/images/site-photo.png', alt='' data-toggle='modal', data-target='#myModaluntitled')
+            include ./untitled_modal.jade
+           
+          article.work.col-md-3.col-sm-6.col-xs-12
+            img.img-responsive(src='/images/workorder.png',alt='' data-toggle='modal', data-target='#myModalworkorder') 
+            include ./Workorder_modal.jade 
+           
+            
+    #contact.page
+      .container-fluid
+        h2 Let's chat
+        .row
+          .contact-icon.col-md-12.text-center
+        
+              a(href='https://github.com/ambaker888')
+              span.fa.fa-map-marker 
+                | Cincinnati, OH 
+              a(href='https://github.com/ambaker888')
+              span.fa.fa-envelope 
+                | ambaker.888@gmail.com 
+
+
+            
+            
+          .container
+            .col-md-12.text-center
+              form
+                .form-group 
+                  input#exampleInputname.form-control(type='name', placeholder='Name')
+                .form-group
+             
+                  input#exampleInputemail.form-control(type='email', placeholder='Email')
+                .form-group
+                  textarea.form-control(rows='3', placeholder='Message')
+                   
+                button.btn.btn-default.btn-block(type='submit') Submit
+
