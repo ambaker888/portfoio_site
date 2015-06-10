@@ -15,11 +15,11 @@ footer {
   color:#777777;
   padding-top:3em;
 }
-.logo{
-  margin-left: 1em;
+.navbar-brand img{
+  width: 72%;
 }
 .navbar {
-  min-height: 50px;
+  min-height: 70px;
   margin-bottom: 0px;
   color: black;
   background:white;
@@ -35,6 +35,7 @@ footer {
   }
   .navbar .nav > li > a {
     margin: auto;
+    font-size: 1em;
   }
 }
  h1, h2, h3{
@@ -47,13 +48,10 @@ footer {
   padding-top: 5em;
   padding-bottom: 6em;
 }
-#contact a{
-  padding: 2em;
-}
 
 header .navbar-default .navbar-nav a{
   font-size: .9em;
-  padding: 1em;
+  padding-top: 1em;
   font-weight: bold;
 }
 header .navbar-default .navbar-nav a:hover{
@@ -94,7 +92,7 @@ color:#777777;
 #work img{
   width: 100%;
 }
-a img{
+article img:hover{
   background: blue;
 }
 @media (max-width: 768px) { 
@@ -113,7 +111,7 @@ a img{
 }
 .hero-message{
     /*bottom: 2%;*/
-    top:50%;
+    top:63%;
     font-size: 4em;
     font-weight: bold;
     height: 30%;
@@ -127,6 +125,11 @@ a img{
     line-height: 1.1em;
     text-align: center;
 }
+#contact a{
+  color: white;
+  text-decoration: underline;
+  padding: 2em;
+}
 .contact-icon{
  background-color: rgba(0, 72, 65, 0.6);
   padding: 1.5em;
@@ -135,8 +138,10 @@ a img{
   color:#777777 ;
   font-size: 2em;
 }
-
 .modal-dialog{
   width: 100%;
   color:#777777;
+}
+#myModalfs img{
+
 }
