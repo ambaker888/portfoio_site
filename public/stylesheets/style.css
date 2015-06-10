@@ -127,7 +127,6 @@ article img:hover{
 }
 #contact a{
   color: white;
-  text-decoration: underline;
   padding: 2em;
 }
 .contact-icon{
@@ -142,9 +141,19 @@ article img:hover{
   width: 100%;
   color:#777777;
 }
-.btn-primary{
-
-}
 #myWorkModal .modal-content {
   display: none;
+}
+.btn-primary{
+  border-color: none;
+  background-color: none;
+  color: #045445;
+  font-size: 2em;
+}
+.btn-primary .fa{
+  padding: 1em;
+  color: #045445;
+}
+#content{
+  background-color:#ffffff;
 }
