@@ -1,0 +1,25 @@
+.modal-content.kandidly
+  .modal-header
+    button.close(type='button', data-dismiss='modal', aria-label='Close')
+      span(aria-hidden='true') 
+        &times;        
+    h3.modal-title#myModalLabel 
+     | Kandid.ly  
+  .modal-body
+    .container
+      .col-sm-4
+        img.img-responsive(src='/images/kandidnly-homepage.png', alt='') 
+      .col-sm-4
+        img.img-responsive(src='/images/kandidly-about.png', alt='') 
+      .col-sm-4
+        img.img-responsive(src='/images/kandidly-how-it-workscustomer.png', alt='') 
+         
+  .modal-footer
+    .col-xs-12.text-center
+      a.btn.btn-primary(href='#' data-show='.workorder')
+        span.glyphicon.glyphicon-chevron-left  
+        | Previous
+      a.btn.btn-primary(href='#' data-show='.fs247')
+        | Next
+        span.glyphicon.glyphicon-chevron-right
+          
