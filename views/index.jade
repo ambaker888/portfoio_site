@@ -14,7 +14,7 @@ block content
             span.icon-bar
           
           a.navbar-brand.pull-left(href='#home')
-            img(src='', alt='')
+            img(src='/images/amb-site-logo.png', alt='')
 
         #collapse.collapse.navbar-collapse
           ul.nav.navbar-nav.pull-right
@@ -35,7 +35,7 @@ block content
   .main
     #about.page.container-fluid
       .content.container
-        h2 Who am I and what do I do
+        h2 Get to know me
         .row
           .col-sm-10.col-sm-offset-1
             p
@@ -59,12 +59,12 @@ block content
             include ./fs247_modal.jade
 
           article.work.col-md-3.col-sm-6.col-xs-12
-            img.img-responsive(src='/images/site-photo.png', alt='' data-toggle='modal', data-target='#myModaluntitled')
-            include ./untitled_modal.jade
+            img.img-responsive(src='/images/kandr-site.png', alt='' data-toggle='modal', data-target='#myModalkandr')
+            //include ./untitled_modal.jade
            
           article.work.col-md-3.col-sm-6.col-xs-12
             img.img-responsive(src='/images/workorder.png',alt='' data-toggle='modal', data-target='#myModalworkorder') 
-            include ./Workorder_modal.jade 
+            //include ./workorder_modal.jade 
            
             
     #contact.page
@@ -72,13 +72,11 @@ block content
         h2 Let's chat
         .row
           .contact-icon.col-md-12.text-center
-        
-              a(href='https://github.com/ambaker888')
               span.fa.fa-map-marker 
                 | Cincinnati, OH 
-              a(href='https://github.com/ambaker888')
-              span.fa.fa-envelope 
-                | ambaker.888@gmail.com 
+              a(href='mailto:ambaker.888@gmail.com')
+                span.fa.fa-envelope 
+                  | ambaker.888@gmail.com 
 
 
             
@@ -94,5 +92,6 @@ block content
                 .form-group
                   textarea.form-control(rows='3', placeholder='Message')
                    
-                button.btn.btn-default.btn-block(type='submit') Submit
+                a(href='mailto:ambaker.888@gmail.com')
+                  button.btn.btn-default.btn-block(type='submit') Submit
 
