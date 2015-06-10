@@ -142,6 +142,9 @@ article img:hover{
   width: 100%;
   color:#777777;
 }
-#myModalfs img{
+.btn-primary{
 
+}
+#myWorkModal .modal-content {
+  display: none;
 }
