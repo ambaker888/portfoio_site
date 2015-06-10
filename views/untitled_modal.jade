@@ -14,7 +14,10 @@
       
              
       .modal-footer
-        button.btn.btn-default(type='button', data-dismiss='modal') 
-          span.glyphicon.glyphicon-chevron-left    Previous     
-        button.btn.btn-primary(type='button') Next
-          span.glyphicon.glyphicon-chevron-right
+        .col-xs-12.text-center
+          a(href='workorder_modal.jade')
+            button.btn.btn-primary(type='button', data-dismiss='modal') 
+              span.glyphicon.glyphicon-chevron-left    Previous  
+          a(href='fs247_modal.jade')
+            button.btn.btn-primary(type='button') Next
+              span.glyphicon.glyphicon-chevron-right
