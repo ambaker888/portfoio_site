@@ -15,13 +15,11 @@ margin-top: 2em;
 	border-radius: 0px;
 	top-margin: 2.2em;
 }
-
 .form-control{
 	border-radius: 0px;
-	background-color: rgba(0, 72, 65, 0.6);
-	border-color: rgba(0, 72, 65, 0.6);
+	background-color: transparent;
+	border-color: transparent;
 	padding: 1.7em;
-	
 }
 #home{
   background-repeat: no-repeat;
