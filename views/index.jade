@@ -50,21 +50,14 @@ block content
       .container-fluid   
         .row
           article.work.col-md-3.col-sm-6.col-xs-12
-            img.img-responsive(src='/images/kandidly.png', alt='' data-toggle='modal', data-target='#myModalkandidly')
-            include ./kandidly_modal.jade
-
-              
+            img.img-responsive(src='/images/kandidly.png', alt='' data-toggle='modal', data-target='#myWorkModal' data-show='.kandidly')
           article.work.col-md-3.col-sm-6.col-xs-12
-            img.img-responsive(src='/images/FS247.png', alt='' data-toggle='modal', data-target='#myModalfs')
-            include ./fs247_modal.jade
-
+            img.img-responsive(src='/images/FS247.png', alt='' data-toggle='modal', data-target='#myWorkModal' data-show='.fs247')
           article.work.col-md-3.col-sm-6.col-xs-12
-            img.img-responsive(src='/images/kandr-site.png', alt='' data-toggle='modal', data-target='#myModalkandr')
-            //include ./untitled_modal.jade
+            img.img-responsive(src='/images/kandr-site.png', alt='' data-toggle='modal', data-target='#myWorkModal' data-show='.kandr')
+          article.work.col-md-3.col-sm-6.col-xs-12
+            img.img-responsive(src='/images/workorder.png',alt='' data-toggle='modal', data-target='#myWorkModal' data-show='.workorder')
            
-          article.work.col-md-3.col-sm-6.col-xs-12
-            img.img-responsive(src='/images/workorder.png',alt='' data-toggle='modal', data-target='#myModalworkorder') 
-            //include ./workorder_modal.jade 
            
             
     #contact.page
@@ -73,10 +66,10 @@ block content
         .row
           .contact-icon.col-md-12.text-center
               span.fa.fa-map-marker 
-                | Cincinnati, OH 
+              | Cincinnati, OH 
               a(href='mailto:ambaker.888@gmail.com')
                 span.fa.fa-envelope 
-                  | ambaker.888@gmail.com 
+                | ambaker.888@gmail.com 
 
 
             
@@ -95,3 +88,4 @@ block content
                 a(href='mailto:ambaker.888@gmail.com')
                   button.btn.btn-default.btn-block(type='submit') Submit
 
+  include ./_modal.jade
