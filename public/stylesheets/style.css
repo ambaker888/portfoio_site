@@ -15,8 +15,9 @@ footer {
   color:#777777;
   padding-top:3em;
 }
-.navbar-brand img{
-  width: 72%;
+.navbar-brand{
+  width: 69%;
+  padding: 0px;
 }
 .navbar {
   min-height: 70px;
@@ -137,7 +138,7 @@ article img:hover{
   padding: 1em;
   color: #045445;
 }
-/*.hero {
+#home{
   background-image: url(/images/himepagesmaller.png);
   margin: 0px;;
   background-repeat: no-repeat;
@@ -147,12 +148,12 @@ article img:hover{
   z-index: 1;
   background-color: transparent;
   background-position: 50% 50%;   
-  height: 45em; */
+  height: 45em;
 }
 .hero-message{
     /*bottom: 2%;*/
     top:63%;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     height: 30%;
     left: 20%;
