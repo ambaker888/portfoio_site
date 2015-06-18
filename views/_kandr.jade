@@ -3,19 +3,22 @@
     button.close(type='button', data-dismiss='modal', aria-label='Close')
       span(aria-hidden='true') 
         &times;        
-    h3.modal-title#myModalLabel 
-     | K&amp;R Software  
-  .modal-body
-    .container
-      .col-sm-4.col-sm-offset-4.text-center
-        img.img-responsive(src='/images/kandr-portfolio.png', alt='') 
-  
-  .modal-footer
     .col-xs-12.text-center
-      a.btn.btn-primary(href='#' data-show='.workorder')
-        span.glyphicon.glyphicon-chevron-left  
-        | Previous
       a.btn.btn-primary(href='#' data-show='.fs247')
-        | Next
-        span.glyphicon.glyphicon-chevron-right
-
+        span.glyphicon.glyphicon-chevron-left  
+      a.btn.btn-primary(href='#' data-show='.workorder')
+        span.glyphicon.glyphicon-chevron-right 
+    .col-sm-12.modal-title      
+      h2
+       | K&amp;R Software
+      p.text-center
+        | Web design and development   
+    .col-sm-12  
+      .col-sm-6.text-left
+        p
+          | K&amp;R Software is a software and web based application development agency. They wanted a site that refelcts their skills, work, and personality. K&amp;R Software 's new site now shows off the latest client work in a single page easy to use layout.
+      .col-sm-6
+        img.img-responsive(src='/images/homepage-fs247.jpg', alt='') 
+          
+         
+  .modal-footer
