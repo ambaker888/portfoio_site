@@ -1,25 +1,24 @@
 .modal-content.kandidly
   .modal-header
-    button.close(type='button', data-dismiss='modal', aria-label='Close')
-      span(aria-hidden='true') 
-        &times;        
-    h3.modal-title#myModalLabel 
-     | Kandid.ly  
-  .modal-body
-    .container
-      .col-sm-4
-        img.img-responsive(src='/images/kandidnly-homepage.png', alt='') 
-      .col-sm-4
-        img.img-responsive(src='/images/kandidly-about.png', alt='') 
-      .col-sm-4
-        img.img-responsive(src='/images/kandidly-how-it-workscustomer.png', alt='') 
-         
-  .modal-footer
+    button.btn-primary.pull-right(type='button', data-dismiss='modal')
+      span.glyphicon.glyphicon-remove      
     .col-xs-12.text-center
       a.btn.btn-primary(href='#' data-show='.workorder')
         span.glyphicon.glyphicon-chevron-left  
-        | Previous
       a.btn.btn-primary(href='#' data-show='.fs247')
-        | Next
-        span.glyphicon.glyphicon-chevron-right
-          
+        span.glyphicon.glyphicon-chevron-right 
+    .col-sm-12.modal-title      
+      h2
+       | Kandid.ly
+      p.text-center
+        | Web design and development   
+    .col-sm-12  
+      .col-sm-5.col-sm-offset-1.text-left
+        p
+          | Kandid.ly's site helps people find local and affordabe photographers.  Kandid.ly wanted a redesign that was simple and showcased the photographers' photos.  In the redesign I created a site that went well with their brand identity and showed off the photographers' work.
+      .col-sm-6
+        .work-container
+          img.img-responsive(src='/images/kandid.ly-homepage.jpg', alt='') 
+          img.img-responsive(src='/images/kandidly-how-it-works.jpg', alt='')
+         
+  .modal-footer
