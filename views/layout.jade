@@ -18,24 +18,18 @@ html
     script(src='/javascripts/application.js')
   
   body(data-spy='scroll', data-target='.navbar-fixed-top')
-    .container-fluid
-      
-      block content
+    block content
     
-    footer
-      .container-fluid
-        .row
-          .col-xs-8.col-xs-offset-2
-            .col-xs-12.text-center
-                ul.list-inline
-                  li
-                    a(href='https://www.behance.net/andreambaker') 
-                      span.fa.fa-behance
-                  li
-                    a(href='https://github.com/ambaker888')
-                      span.fa.fa-github-alt
-
-            .col-xs-12.text-center
-              p &copy;Andrea Baker 2015
+    footer.container-fluid
+      .text-center
+        ul.list-inline
+          li
+            a(href='https://www.behance.net/andreambaker') 
+              span.fa.fa-behance
+          li
+            a(href='https://github.com/ambaker888')
+              span.fa.fa-github-alt
+        p &copy; Andrea Baker 2015
+            
             
                     

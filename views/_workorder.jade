@@ -1,24 +1,26 @@
+
+
 .modal-content.workorder
   .modal-header
-    button.close(type='button', data-dismiss='modal', aria-label='Close')
-      span(aria-hidden='true') 
-        | &times;        
-    h3.modal-title
-     | Work Order
-    h4.subtitle.text-center
-      | Webbased app design   
-  .modal-body
-    .container
-      .col-sm-4
-        img.img-responsive(src='/images/kandidnly-homepage.png', alt='') 
-      .col-sm-4
-        img.img-responsive(src='/images/kandidly-about.png', alt='') 
-   
-  .modal-footer
+    button.btn-primary.pull-right(type='button', data-dismiss='modal')
+      span.glyphicon.glyphicon-remove      
     .col-xs-12.text-center
-      a.btn.btn-primary(href='#' data-show='.fs247')
+      a.btn.btn-primary(href='#' data-show='.kandr')
         span.glyphicon.glyphicon-chevron-left  
-        | Previous
       a.btn.btn-primary(href='#' data-show='.kandidly')
-        | Next
-        span.glyphicon.glyphicon-chevron-right
+        span.glyphicon.glyphicon-chevron-right 
+    .col-sm-12.modal-title      
+      h2
+       | Work Order HQ
+      p.text-center
+        | Web design development and UX/UI  
+    .col-sm-12  
+      .col-sm-5.col-sm-offset-1.text-left
+          p
+            |  Work Order HQ is a web based application for companies that offer IT support.  FS 24/7 wanted an app that made easy communication from a dispatcher to a tech.  This app gives every user their own personal dashboard that notifies them of every action from new work order to closed work order.  This web based application has an easy to use interface and sleak design. 
+      .col-sm-6
+        .work-container
+          img.img-responsive(src='/images/workorder.jpg', alt='') 
+          
+         
+  .modal-footer
