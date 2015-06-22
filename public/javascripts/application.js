@@ -1,4 +1,4 @@
-jQuery(document).ready(function () {
+/*jQuery(document).ready(function () {
   jQuery(document).on('click','[data-show]', function (e) {
     e.preventDefault();
     jQuery('.modal-content').each(function(){
@@ -8,4 +8,4 @@ jQuery(document).ready(function () {
     console.log(target);
     jQuery(target).show();
   });
-});
+});*/
