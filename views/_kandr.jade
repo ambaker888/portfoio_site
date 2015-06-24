@@ -1,25 +1,25 @@
 .modal-content.kandr
   .modal-header
-    a.btn.btn-primary.pull-right(type='button', data-dismiss='modal', aria-label='Close')
-      span(aria-hidden='true') 
-        &times;        
-    .col-xs-12.text-center
-      a.btn.btn-primary(href='#' data-show='.fs247')
+    .modal-actions
+      button.close(type='button', data-dismiss='modal', aria-label='Close')
+        span(aria-hidden='true')
+          span.glyphicon.glyphicon-remove
+    .col-xs-12.text-center  
+      button.btn.btn-primary(href='#' data-show='.fs247')
         span.glyphicon.glyphicon-chevron-left  
-      a.btn.btn-primary(href='#' data-show='.workorder')
+      button.btn.btn-primary(href='#' data-show='.workorder')
         span.glyphicon.glyphicon-chevron-right 
-    .col-sm-12.modal-title      
+    .modal-title      
       h2
        | K&amp;R Software
-      p.text-center
+      p.subtitle.text-center
         | Web design and development   
+  .modal-body   
     .col-sm-12  
       .col-sm-5.col-sm-offset-1.text-left
         p
           | K&amp;R Software is a software and web based application development agency. They wanted a site that refelcts their skills, work, and personality. K&amp;R Software 's new site now shows off the latest client work in a single page easy to use layout.
       .col-sm-6
-        .work-container
-          img.img-responsive(src='/images/kandr_portfolio.jpg', alt='') 
-          
-         
+        .work-container.text-center
+          img.img-responsive(src='/images/kandr_portfolio.jpg', alt='')  
   .modal-footer
