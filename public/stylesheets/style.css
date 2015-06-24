@@ -9,7 +9,6 @@ body{
   color: white;
   position: relative;
 }
-
 .navbar-default .navbar-brand{
   color: #188c7b;
   font-size: 2em;
@@ -35,17 +34,20 @@ body{
     font-size: 1em;
   }
 }
- h1, h2, h3{
+h1, h2, h3, h4{
  	font-weight:bold;
   padding-bottom: .8em;
   text-align: center;
   font-size: 2em;
 }
+.subtitle{
+  font-size: 1.5;
+  font-weight: bold;
+}
 .page{
   padding-top: 5em;
   padding-bottom: 6em;
 }
-
 header .navbar-default .navbar-nav a{
   font-size: .9em;
   padding-top: 1em;
@@ -59,7 +61,6 @@ header .navbar-default .navbar-nav .active a{
   color: #000000;
 }
 header .navbar-default .navbar-nav .active a:hover{
-  text-decoration: underline;
   color: #000000;
   background-color: transparent;
 }
@@ -82,8 +83,9 @@ header .navbar-default .navbar-toggle:focus{
   position: relative;
   width: 100%;
   display: block;
-  height: 42em;
-  background-position: 50% 0px;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 .hero-message{
   left: 10%;
@@ -94,33 +96,41 @@ header .navbar-default .navbar-toggle:focus{
   z-index: 3;
   font-size: 2em;
 }
-@media (max-width: 810px) {
+@media (max-width: 600px) {
   .hero-message{
-  left: 10%;
-  top:70%;
-  text-align: center;
-  position: absolute;
-  width: 82%;
-  z-index: 3;
-  font-size: 1.2em;
+    left: 10%;
+    top:70%;
+    text-align: center;
+    position: absolute;
+    width: 82%;
+    z-index: 3;
+    font-size: 1.3em;
   }
 }
 #about{
   background: #ffffff;
   color:#777777;
+  padding-bottom: 13em;
 }
 .work{
-  background: #ffffff;
   margin:0;
   padding: 0;
 }
 #work img{
   width: 100%;
 }
+#work .container-fluid{
+  padding-right: 0px;
+  padding-left: 0px;
+}
 @media (max-width: 768px) { 
   #work img {
   width: 100%;
   }
+}
+#work img:hover{
+  opacity: .5;
+  background-color: blue;
 }
 .fa-behance, .fa-github-alt{
   color:#777777 ;
@@ -139,7 +149,7 @@ header .navbar-default .navbar-toggle:focus{
   border:0px;
   font-size: 1em;
 }
-.modal-content .modal-header .btn-primary{
+.btn-primary, button.close{
   color: #045445;
   font-size: 1em;
   background-color: transparent;
@@ -151,7 +161,21 @@ header .navbar-default .navbar-toggle:focus{
   border-radius: 100px;
   border: 2px solid #045445;
   margin: 1em;
-  opacity: .2;
+  opacity: .3;
+}
+.btn-view-site{
+  color: #045445;
+  font-size: 1em;
+  background-color: transparent;
+  border: 0px;
+  padding: 5px 10px;
+  display: inline-block;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  border: 2px solid #045445;
+  margin: 1em;
+  opacity: .5;
 }
 .modal-header,  .modal-footer{
   border: 0px;
@@ -161,29 +185,33 @@ header .navbar-default .navbar-toggle:focus{
 }
 .work-container img{
   margin-bottom: 1em;
-  width: 70%;
+  width: 80%;
 }
-footer {
-  font-size: .8em;
-  background: white;
+#contact{
+  background: #ffffff;
   color:#777777;
-  padding-top:3em;
+  padding-bottom: 10em;
 }
 .button-email{
   background-color: none;
-  color: #ffffff;
+  color:#045445;
   font-size: 1em;
   padding: 5px 10px;
   display: inline-block;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
-  border: 2px solid #ffffff;
+  border: 2px solid #045445;
   margin: 1em;
   margin-top: 2em;
 }
 .button-email:hover{
-  color:#045445;
-  background-color: #ffffff;
+  color:#ffffff;
+  background-color: #045445;
 }
-
+footer {
+  font-size: .8em;
+  background: white;
+  background: #E6E6E6;
+  padding-top:3em;
+}
