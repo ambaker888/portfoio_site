@@ -1,24 +1,28 @@
 .modal-content.kandidly
   .modal-header
-    button.btn-primary.pull-right(type='button', data-dismiss='modal')
-      span.glyphicon.glyphicon-remove      
-    .col-xs-12.text-center
-      a.btn.btn-primary(href='#' data-show='.workorder')
-        span.glyphicon.glyphicon-chevron-left  
-      a.btn.btn-primary(href='#' data-show='.fs247')
-        span.glyphicon.glyphicon-chevron-right 
-    .col-sm-12.modal-title      
+    .modal-actions
+      button.close(type='button', data-dismiss='modal', aria-label='Close')
+        span(aria-hidden='true')
+          span.glyphicon.glyphicon-remove
+      .col-xs-12.text-center 
+        button.btn.btn-primary(href='#' data-show='.workorder')
+          span.glyphicon.glyphicon-chevron-left  
+        button.btn.btn-primary(href='#' data-show='.fs247')
+          span.glyphicon.glyphicon-chevron-right 
+    .modal-title      
       h2
        | Kandid.ly
-      p.text-center
+      p.subtitle.text-center
         | Web design and development   
-    .col-sm-12  
-      .col-sm-5.col-sm-offset-1.text-left
-        p
-          | Kandid.ly's site helps people find local and affordabe photographers.  Kandid.ly wanted a redesign that was simple and showcased the photographers' photos.  In the redesign I created a site that went well with their brand identity and showed off the photographers' work.
-      .col-sm-6
-        .work-container
-          img.img-responsive(src='/images/kandid.ly-homepage.jpg', alt='') 
-          img.img-responsive(src='/images/kandidly-how-it-works.jpg', alt='')
+  .modal-body
+    .col-sm-5.col-sm-offset-1.text-left
+      p
+        | Kandid.ly's site helps people find local and affordabe photographers.  Kandid.ly wanted a redesign that was simple and showcased the photographers' photos.  In the redesign I created a site that went well with their brand identity and showed off the photographers' work.
+      button.btn.btn-view-site(href='https://www.kandid.ly/')
+        | View Site
+    .col-sm-6
+      .co1-xs-2.col-xs-offset-5.text-center
+        img.img-responsive(src='/images/kandid.ly-homepage.jpg', alt='') 
+        img.img-responsive(src='/images/kandidly-how-it-works.jpg', alt='')
          
   .modal-footer

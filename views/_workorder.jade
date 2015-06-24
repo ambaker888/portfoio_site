@@ -1,26 +1,25 @@
-
-
 .modal-content.workorder
   .modal-header
-    button.btn-primary.pull-right(type='button', data-dismiss='modal')
-      span.glyphicon.glyphicon-remove      
-    .col-xs-12.text-center
-      a.btn.btn-primary(href='#' data-show='.kandr')
+    .modal-actions
+      button.close(type='button', data-dismiss='modal', aria-label='Close')
+        span(aria-hidden='true')
+          span.glyphicon.glyphicon-remove
+    .col-xs-12.text-center  
+      button.btn.btn-primary(href='#' data-show='._kandr')
         span.glyphicon.glyphicon-chevron-left  
-      a.btn.btn-primary(href='#' data-show='.kandidly')
+      button.btn.btn-primary(href='#' data-show='._kandidly')
         span.glyphicon.glyphicon-chevron-right 
-    .col-sm-12.modal-title      
+    .modal-title      
       h2
        | Work Order HQ
-      p.text-center
+      p.subtitle.text-center
         | Web design development and UX/UI  
-    .col-sm-12  
+  .modal-body
+    .col-sm-12
       .col-sm-5.col-sm-offset-1.text-left
           p
             |  Work Order HQ is a web based application for companies that offer IT support.  FS 24/7 wanted an app that made easy communication from a dispatcher to a tech.  This app gives every user their own personal dashboard that notifies them of every action from new work order to closed work order.  This web based application has an easy to use interface and sleak design. 
       .col-sm-6
-        .work-container
+        .co1-xs-2.col-xs-offset-5.text-center
           img.img-responsive(src='/images/workorder.jpg', alt='') 
-          
-         
   .modal-footer
