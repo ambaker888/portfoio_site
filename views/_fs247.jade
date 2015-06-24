@@ -1,23 +1,26 @@
 .modal-content.fs247
   .modal-header
-    button.btn-primary.pull-right(type='button', data-dismiss='modal')
-      span.glyphicon.glyphicon-remove  
-    .col-xs-12.text-center
-      a.btn.btn-primary(href='#' data-show='.kandidly')
+    .modal-actions
+      button.close(type='button', data-dismiss='modal', aria-label='Close')
+        span(aria-hidden='true')
+          span.glyphicon.glyphicon-remove
+    .col-xs-12.text-center  
+      button.btn.btn-primary(href='#' data-show='.kandidly')
         span.glyphicon.glyphicon-chevron-left  
-      a.btn.btn-primary(href='#' data-show='.kandr')
-        span.glyphicon.glyphicon-chevron-right 
-    .col-sm-12.modal-title      
+      button.btn.btn-primary(href='#' data-show='.kandr')
+        span.glyphicon.glyphicon-chevron-right      
+    .modal-title     
       h2
        | FS 24/7 Ltd
-      p.text-center
-        | Web design and development   
+      p.subtitle.text-center
+        | Web design and development
+  .modal-body   
     .col-sm-12  
       .col-sm-5.col-sm-offset-1.text-left
         P
           |  FS 24/7 is a nation wide service that provides companies IT and networking support.  FS 24/7 wanted a site that was not only modern but also marketed their services.  I developed a responsive site that met all of their wants and needs.
       .col-sm-6
-        .work-container
+        .co1-xs-2.col-xs-offset-5.text-center
           img.img-responsive(src='/images/home-fs.jpg', alt='') 
           img.img-responsive(src='/images/aboutus-fs247.jpg', alt='')
           img.img-responsive(src='/images/services-fs247.jpg', alt='')     
