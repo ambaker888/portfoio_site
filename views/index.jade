@@ -20,6 +20,8 @@ block content
             li
               a(href='#work') Work
             li
+              a(href='#blog') Blog
+            li
               a(href='#contact') Contact
   #home.container-fluid
     .hero-message
@@ -47,6 +49,28 @@ block content
       a(href='#')
         article.work.col-md-3.col-sm-6.col-xs-12
           img.img-responsive(src='/images/workorder.png',alt='' data-toggle='modal', data-target='#myWorkModal' data-show='.workorder')
+  #blog.page.container-fluid.text-center
+      h2 Blog
+      p
+        | This blog is dedicated to helping web designers find the resources they need but also inspire them to create a better internet.
+    article
+      h4 Style Guides 
+      p
+        |  If there's one thing every developer loves its a detailed style guide with codded elements.
+      a(href='post2-styleguides.jade')
+        | read more
+    article
+      h4 Stock Photos 
+      p
+        | Ever had a client that provided little photography or didn't want to spend a lot on photos.
+      a(href='#')
+        | read more
+    article
+      h4 Typography 
+      p
+        | List of great places to find that perfect font
+      a(href='#')
+        | read more
   #contact.page.container-fluid.text-center
       h2 Let's chat
       p
