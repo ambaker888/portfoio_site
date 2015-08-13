@@ -20,7 +20,6 @@ html
     script(src='/javascripts/application.js')
   
   body(data-spy='scroll', data-target='.navbar-fixed-top')
-    block content
     header
       nav.navbar.navbar-default.navbar-fixed-top
         .container-fluid
@@ -40,9 +39,12 @@ html
               li
                 a(href='#work') Work
               li
-                a(href='/#blog') Blog
+                a(href='#blog') Blog
               li
-                a(href='/#contact') Contact
+                a(href='#contact') Contact
+    
+    block content
+    
     footer.container-fluid
       .text-center
         ul.list-inline

@@ -1,0 +1,13 @@
+extend ../layout.jade 
+
+block content
+  #blog-post.container
+    h1
+      block post_title
+    div
+      block post_body
+
+    script(type='text/javascript')
+      | jQuery('header .navbar-default .navbar-nav a').each(function(){
+      |   jQuery(this).attr('href', '/'+jQuery(this).attr('href') );
+      | });

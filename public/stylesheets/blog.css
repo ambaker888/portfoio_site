@@ -1,0 +1,12 @@
+#blog-post {
+	background-color: #ffffff;
+	margin-top: 3.5em;
+	color:#777777;
+	margin-bottom: 3em;
+	padding: 2em
+}
+.date{
+	font-size: .6em;
+	text-align: left;
+	margin-bottom: 0em;
+}
