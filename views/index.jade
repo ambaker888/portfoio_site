@@ -1,28 +1,7 @@
 extends layout
 
 block content
-  header
-    nav.navbar.navbar-default.navbar-fixed-top
-      .container-fluid
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#main-menu')
-            span.sr-only toggle navigation
-            span.icon-bar
-            span.icon-bar           
-            span.icon-bar          
-          a.navbar-brand.pull-left(href='#home') {AB}
-        #main-menu.collapse.navbar-collapse
-          ul.nav.navbar-nav.pull-right
-            li.active
-              a(href='#home') Home
-            li
-              a(href='#about') About 
-            li
-              a(href='#work') Work
-            li
-              a(href='#blog') Blog
-            li
-              a(href='#contact') Contact
+  
   #home.container-fluid
     .hero-message
       h1 Your favorite web designer 
@@ -50,22 +29,22 @@ block content
         article.work.col-md-3.col-sm-6.col-xs-12
           img.img-responsive(src='/images/workorder.png',alt='' data-toggle='modal', data-target='#myWorkModal' data-show='.workorder')
   #blog.page.container-fluid.text-center
-      h2 Blog
-      p
-        | This blog is dedicated to helping web designers find the resources they need but also inspire them to create a better internet.
-    article
+    h2 Blog
+    p
+      | This blog is dedicated to helping web designers find the resources they need but also inspire them to create a better internet.
+    article.col-md-4.col-xs-12
       h4 Style Guides 
       p
         |  If there's one thing every developer loves its a detailed style guide with codded elements.
-      a(href='post2-styleguides.jade')
+      a(href='/posts/style-guides')
         | read more
-    article
+    article.col-md-4.col-xs-12
       h4 Stock Photos 
       p
         | Ever had a client that provided little photography or didn't want to spend a lot on photos.
       a(href='#')
         | read more
-    article
+    article.col-md-4.col-xs-12
       h4 Typography 
       p
         | List of great places to find that perfect font

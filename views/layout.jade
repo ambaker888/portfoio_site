@@ -13,7 +13,7 @@ html
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')  
     link(rel='stylesheet', type="text/css", href='/stylesheets/style.css')
     link(rel='stylesheet', type="text/css", href='/stylesheets/blog.css')
-    link(href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css')
     
     script(src='//code.jquery.com/jquery-2.1.3.min.js')
     script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
@@ -21,7 +21,28 @@ html
   
   body(data-spy='scroll', data-target='.navbar-fixed-top')
     block content
-    
+    header
+      nav.navbar.navbar-default.navbar-fixed-top
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#main-menu')
+              span.sr-only toggle navigation
+              span.icon-bar
+              span.icon-bar           
+              span.icon-bar          
+            a.navbar-brand.pull-left(href='#home') {AB}
+          #main-menu.collapse.navbar-collapse
+            ul.nav.navbar-nav.pull-right
+              li.active
+                a(href='#home') Home
+              li
+                a(href='#about') About 
+              li
+                a(href='#work') Work
+              li
+                a(href='/#blog') Blog
+              li
+                a(href='/#contact') Contact
     footer.container-fluid
       .text-center
         ul.list-inline
@@ -31,6 +52,9 @@ html
           li
             a(href='https://github.com/ambaker888')
               span.fa.fa-github-alt
+           li
+            a(href='https://twitter.com/Andreambaker8')
+              span.fa.fa-twitter
         p &copy; Andrea Baker 2015
             
             
