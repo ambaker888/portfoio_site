@@ -69,20 +69,17 @@ header .navbar-default .navbar-nav a{
   text-decoration: none;
 }
 header .navbar-default .navbar-nav a:hover{
-  color: #000000;
-  border-bottom: 2px solid #000000;
+  background-color: #02BE9B;
+  color: #ffffff;
   text-decoration: none;
-  background-color: white;
 }
 header .navbar-default .navbar-nav .active a{
-  background-color: white;
-  color: #000000;
-  border-bottom: 1px solid #000000;
+  background-color: #02BE9B;
+  color: #ffffff;
 }
 header .navbar-default .navbar-nav .active a:hover{
-  color: #000000;
-  background-color: white;
-  border-bottom: 2px solid #000000;
+  color: #ffffff;
+  background-color: #02BE9B;
 }
 header .navbar-default{
   background: #ffffff;
@@ -218,14 +215,14 @@ header .navbar-default .navbar-toggle:focus{
 }
 .button-email{
   background-color: none;
-  color:#ffffff;
+  color:#02BE9B;
   font-size: 1em;
   padding: 5px 10px;
   display: inline-block;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
-  border: 2px solid #ffffff;
+  border: 3px solid #02BE9B;
   margin: 1em;
   margin-top: 2em;
   text-decoration: none;
@@ -236,8 +233,7 @@ header .navbar-default .navbar-toggle:focus{
 }
 footer {
   font-size: .8em;
-  background: white;
-  background: #E6E6E6;
+  background-color: #ffffff;
   padding-top:3em;
 }
 #blog article{
@@ -246,9 +242,7 @@ footer {
 a {
   font-style: italic;
   color:#777777;
-  text-decoration: underline;
 }
 a:hover{
-  text-decoration: underline;
   color: #000000;
 }
