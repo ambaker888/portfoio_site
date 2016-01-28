@@ -1,11 +1,11 @@
 extends layout
 
 block content
-  
+
   #home.container-fluid
     .hero-message
-      h1 Your favorite web designer 
-  
+      h1 Your favorite web designer
+
   #about.page.container-fluid
     .content.container.col-sm-10.col-sm-offset-1
       h2 Get to know me
@@ -28,36 +28,14 @@ block content
       a(href='#')
         article.work.col-md-3.col-sm-6.col-xs-12
           img.img-responsive(src='/images/workorder.png',alt='' data-toggle='modal', data-target='#myWorkModal' data-show='.workorder')
-  #blog.page.container-fluid.text-center
-    h2 Blog
-    p
-      | This blog is dedicated to helping web designers find the resources they need but also inspire them to create a better internet.
-    article.col-md-4.col-xs-12
-      h4 Style Guides 
-      p
-        |  If there's one thing every developer loves its a detailed style guide with codded elements.
-      a(href='/posts/style-guides')
-        | read more
-    article.col-md-4.col-xs-12
-      h4 Stock Photos 
-      p
-        | Ever had a client that provided little photography or didn't want to spend a lot on photos.
-      a(href='#')
-        | read more
-    article.col-md-4.col-xs-12
-      h4 Typography 
-      p
-        | List of great places to find that perfect font
-      a(href='#')
-        | read more
   #contact.page.container-fluid.text-center
       h2 Let's chat
       p
         | I'm currently accepting new projects and would love to hear your ideas.
-     
+
       a.btn.button-email(href='mailto:ambaker.888@gmail.com')
         | ambaker.888@gmail.com
-            
-            
-            
+
+
+
   include ./_modal.jade
